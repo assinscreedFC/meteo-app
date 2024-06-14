@@ -37,7 +37,7 @@ body{
 }
 
 .temps{
-    width: 6vw;
+    width: 5vw;
 }
 
 /* -----------------carte temperrature------------------ */
@@ -54,7 +54,7 @@ body{
     width: 10vw;
 }
 .cloud{
-    width: 6vw;
+    width: 5vw;
     margin-top: 10px;
 }
 /* ----------------inpute------------------- */
