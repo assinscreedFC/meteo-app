@@ -54,6 +54,43 @@ const weatherIconMapping = {
 };
 
 let cityName;
+window.onload=()=>{
+  if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
+} else {
+  console.log("La géolocalisation n'est pas supportée par ce navigateur.");
+}
+
+function successCallback(position) {
+  const latitude = position.coords.latitude;
+  const longitude = position.coords.longitude;
+  getPos(`${latitude},${longitude}`);
+
+  
+  console.log("Latitude :", latitude);
+  console.log("Longitude :", longitude);
+  
+  
+}
+
+function errorCallback(error) {
+  switch(error.code) {
+    case error.PERMISSION_DENIED:
+      console.log("L'utilisateur a refusé la demande de géolocalisation.");
+      break;
+    case error.POSITION_UNAVAILABLE:
+      console.log("Les informations de localisation ne sont pas disponibles.");
+      break;
+    case error.TIMEOUT:
+      console.log("La demande de géolocalisation a expiré.");
+      break;
+    default:
+      console.log("Une erreur inconnue s'est produite.");
+      break;
+  }
+}
+}
+
 //pour set les svg
 function setTEmps(code,svgContainer) {
 fetch(`./image/assets/SVG/${code}`)
@@ -180,7 +217,7 @@ console.log(date);
 
 
 
-getPos("bejaia");
+
 const recherche=document.querySelector(".reacher");
 recherche.addEventListener("keydown",(e)=>{
   if(e.key==="Enter"){
