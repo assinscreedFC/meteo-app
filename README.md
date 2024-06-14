@@ -4,7 +4,7 @@ Meteo-App est une application web simple permettant de consulter la météo d'un
 
 ## Live Preview
 
-Vous pouvez accéder à la démo en direct de Meteo-App [ici](lien_vers_votre_site).
+Vous pouvez accéder à la démo en direct de Meteo-App [ici]([lien_vers_votre_site](https://assinscreedfc.github.io/meteo-app/index.html).
 
 ## Fonctionnalités
 
