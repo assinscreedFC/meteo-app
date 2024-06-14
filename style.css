@@ -113,6 +113,9 @@ body{
         overflow-x:hidden;
         overflow-y: auto;
     }
+    .reacher{
+        width: 25vw;
+    }
     .contains-card{
         flex-direction: column;
         width: 85vw;
