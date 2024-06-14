@@ -21,13 +21,13 @@ Vous pouvez accéder à la démo en direct de Meteo-App [ici](lien_vers_votre_si
 ## Comment Utiliser
 
 1. Clonez ce dépôt sur votre machine locale.
-2. Ouvrez `index.html` dans votre navigateur web.
-3. Entrez le nom de la ville que vous souhaitez consulter dans la barre de recherche et appuyez sur Entrée.
-4. Explorez les informations météorologiques affichées.
+ 1. Clonez le repository :
+    ```bash
+       git clone https://github.com/assinscreedfc/to-do-liste.git
+3. Ouvrez `index.html` dans votre navigateur web.
+4. Entrez le nom de la ville que vous souhaitez consulter dans la barre de recherche et appuyez sur Entrée.
+5. Explorez les informations météorologiques affichées.
 
-## Captures d'écran
-
-Ajoutez ici des captures d'écran de votre application pour montrer son apparence et ses fonctionnalités.
 
 ## Contribution
 
@@ -35,9 +35,5 @@ Les contributions sont les bienvenues! Si vous souhaitez améliorer Meteo-App, v
 
 ## Auteur
 
-- Votre Nom
+- anis
 - Votre Adresse Email
-
-## Licence
-
-Ce projet est sous licence MIT - voir le fichier `LICENSE` pour plus de détails.
