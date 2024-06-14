@@ -131,7 +131,12 @@ getPos("bejaia");
 const recherche=document.querySelector(".reacher");
 recherche.addEventListener("keydown",(e)=>{
   if(e.key==="Enter"){
-    getPos(e.target.value);
+    if(validateLocation(e.target.value)){
+      getPos(e.target.value);
+    }else{
+      alert("Invalid location des caracter specaux on etait detecter");
+    }
+    
     console.log(e.target.value);
   console.log(e);
   console.log(e.key);}
