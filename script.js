@@ -74,6 +74,7 @@ function successCallback(position) {
 }
 
 function errorCallback(error) {
+  getPos("bejaia");
   switch(error.code) {
     case error.PERMISSION_DENIED:
       console.log("L'utilisateur a refusé la demande de géolocalisation.");
